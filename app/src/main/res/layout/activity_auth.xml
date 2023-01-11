@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:textAlignment="textStart"
+    tools:context=".AuthActivity">
+
+    <LinearLayout
+        android:id="@+id/authlayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="contraseña"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/sigub"
+                android:layout_width="80dp"
+                android:layout_height="49dp"
+                android:layout_weight="1"
+                android:background="#752A2A"
+                android:text="@string/SUB"
+                app:rippleColor="#D3C06E"
+                app:strokeColor="#1E88E5" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/logInButton"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="@string/LIB" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/GoogleButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#912626"
+        android:drawableStart="@mipmap/google"
+        android:text="Google"
+        android:textAlignment="center"
+        android:textColor="#FAFAFA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/authlayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

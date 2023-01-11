@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Firebasev1</string>
+    <string name="SUB">Registrar</string>
+    <string name="LIB">Acceder</string>
+    <string name="prefs_file">dgtic.unam.firebasev1.PREFERENCE_FILE_KEY</string>
+</resources>
